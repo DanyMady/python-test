@@ -1,0 +1,13 @@
+version: "3"
+services:
+
+  python:
+    build: .
+    environment:
+      BROWSER: chrome
+    networks:
+      - selenium
+
+networks:
+  selenium:
+    external: true
